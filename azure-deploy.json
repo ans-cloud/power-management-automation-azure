@@ -110,7 +110,7 @@
                                                                             "queries": {
                                                                                 "api-version": "2019-03-01"
                                                                             },
-                                                                            "uri": "https://management.azure.com/subscriptions/@{items('For_each_subscription')?['subscriptionId']}/resourceGroups/@{items('For_each_resource_group')?['name']}/providers/Microsoft.Compute/virtualMachines/@{items('For_each_virtual_machine')?['name']}/powerOff"
+                                                                            "uri": "https://management.azure.com/subscriptions/@{items('For_each_subscription')?['subscriptionId']}/resourceGroups/@{items('For_each_resource_group')?['name']}/providers/Microsoft.Compute/virtualMachines/@{items('For_each_virtual_machine')?['name']}/deallocate"
                                                                         }
                                                                     }
                                                                 },
