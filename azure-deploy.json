@@ -126,25 +126,25 @@
                                                                         {
                                                                             "equals": [
                                                                                 "@items('For_each_virtual_machine')?['tags']?['AutoOff']",
-                                                                                "@addMinutes(utcNow(), 1, 'HH:mm')"
+                                                                                "@addMinutes(formatDateTime(variables('Time'), 'o'), 1, 'HH:mm')"
                                                                             ]
                                                                         },
                                                                         {
                                                                             "equals": [
                                                                                 "@items('For_each_virtual_machine')?['tags']?['AutoOff']",
-                                                                                "@addMinutes(utcNow(), 2, 'HH:mm')"
+                                                                                "@addMinutes(formatDateTime(variables('Time'), 'o'), 2, 'HH:mm')"
                                                                             ]
                                                                         },
                                                                         {
                                                                             "equals": [
                                                                                 "@items('For_each_virtual_machine')?['tags']?['AutoOff']",
-                                                                                "@subtractFromTime(utcNow(), 1, 'Minute', 'HH:mm')"
+                                                                                "@subtractFromTime(formatDateTime(variables('Time'), 'o'), 1, 'Minute', 'HH:mm')"
                                                                             ]
                                                                         },
                                                                         {
                                                                             "equals": [
                                                                                 "@items('For_each_virtual_machine')?['tags']?['AutoOff']",
-                                                                                "@subtractFromTime(utcNow(), 2, 'Minute', 'HH:mm')"
+                                                                                "@subtractFromTime(formatDateTime(variables('Time'), 'o'), 2, 'Minute', 'HH:mm')"
                                                                             ]
                                                                         }
                                                                     ]
@@ -164,25 +164,25 @@
                                                             {
                                                                 "equals": [
                                                                     "@items('For_each_virtual_machine')?['tags']?['AutoOn']",
-                                                                    "@addMinutes(utcNow(), 1, 'HH:mm')"
+                                                                    "@addMinutes(formatDateTime(variables('Time'), 'o'), 1, 'HH:mm')"
                                                                 ]
                                                             },
                                                             {
                                                                 "equals": [
                                                                     "@items('For_each_virtual_machine')?['tags']?['AutoOn']",
-                                                                    "@addMinutes(utcNow(), 2, 'HH:mm')"
+                                                                    "@addMinutes(formatDateTime(variables('Time'), 'o'), 2, 'HH:mm')"
                                                                 ]
                                                             },
                                                             {
                                                                 "equals": [
                                                                     "@items('For_each_virtual_machine')?['tags']?['AutoOn']",
-                                                                    "@subtractFromTime(utcNow(), 1, 'Minute', 'HH:mm')"
+                                                                    "@subtractFromTime(formatDateTime(variables('Time'), 'o'), 1, 'Minute', 'HH:mm')"
                                                                 ]
                                                             },
                                                             {
                                                                 "equals": [
                                                                     "@items('For_each_virtual_machine')?['tags']?['AutoOn']",
-                                                                    "@subtractFromTime(utcNow(), 2, 'Minute', 'HH:mm')"
+                                                                    "@subtractFromTime(formatDateTime(variables('Time'), 'o'), 2, 'Minute', 'HH:mm')"
                                                                 ]
                                                             }
                                                         ]
